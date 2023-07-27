@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="lemonade">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fruit Brust</title>
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <title>Fruit Burst</title>
   <!-- tailwind and daisy ui link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -29,6 +30,15 @@
   </script>
   <!-- font awesome kit -->
   <script src="https://kit.fontawesome.com/fbb47d596f.js" crossorigin="anonymous"></script>
+  <!-- Google font Lato -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    *{
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
@@ -41,18 +51,22 @@
         class="flex flex-row-reverse lg:gap-5 justify-between items-center md:bg-[#F85559] lg:bg-[#F85559] rounded-full md:flex-row  w-full md:px-5 md:py-4 lg:px-6 lg:py-7">
         <!-- hamburger menu -->
 
-          <div class="navbar-end lg:hidden">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute ml-72 md:ml-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-              </label>
-              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative">
-                <li ><a>Homepage</a></li>
-                <li><a>Portfolio</a></li>
-                <li><a>About</a></li>
-              </ul>
-            </div>
+        <div class="navbar-end lg:hidden">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 absolute ml-72 md:ml-0" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+              </svg>
+            </label>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 relative">
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
           </div>
+        </div>
         <!-- main navbar -->
         <div class="absolute lg:relative hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-[18px] text-white font-medium gap-4">
@@ -158,31 +172,32 @@
           <a href="#slide1" class="btn btn-circle border-0 bg-black text-white">❯</a>
         </div>
       </div>
-    <!-- overlay div -->
+      <!-- overlay div -->
     </div>
-    <div class="bg-white rounded-xl shadow-xl hidden lg:flex justify-between w-[80%] mx-auto relative -top-20 px-10 py-10">
-      <div >
+    <div
+      class="bg-white rounded-xl shadow-xl hidden lg:flex justify-between w-[80%] mx-auto relative -top-20 px-10 py-10">
+      <div>
         <img class="w-20" src="./images/fruit1.png" alt="" srcset="">
         <p class="text-center">Grapes</p>
       </div>
       <div>
         <img class="w-16" src="./images/fruit2.png" alt="" srcset="">
-        <p  class="text-center">Orange</p>
+        <p class="text-center">Orange</p>
       </div>
       <div>
         <img class="w-20" src="./images/fruit3.png" alt="" srcset="">
-        <p  class="text-center">Mango</p>
+        <p class="text-center">Mango</p>
       </div>
       <div>
         <img class="w-20" src="./images/fruit4.png" alt="" srcset="">
-        <p  class="text-center">Strawberry</p>
+        <p class="text-center">Strawberry</p>
       </div>
       <div>
         <img class="w-20" src="./images/fruit5.png" alt="" srcset="">
-        <p  class="text-center">Pomegranate</p>
+        <p class="text-center">Pomegranate</p>
       </div>
     </div>
-    
+
   </header>
   <!-- main section -->
   <main class="container mx-auto px-0">
@@ -443,8 +458,8 @@
         </div>
       </div>
       <div class="flex justify-center items-center">
-      <button class="rounded-xl text-xl font-medium bg-[#F85559] mt-12 text-white px-10 py-6">Shop All</button>
-    </div>
+        <button class="rounded-xl text-xl font-medium bg-[#F85559] mt-12 text-white px-10 py-6">Shop All</button>
+      </div>
     </section>
     <!-- Teams section -->
     <section class="py-20 px-5 md:px-10 lg:px-20">
@@ -534,89 +549,104 @@
     <!-- why choose us section -->
     <section class="pb-20 px-5 md:px-10 lg:px-20">
       <h1 class="text-5xl text-black text-center font-extrabold mb-6">Why Choose Us</h1>
-      <p class="text-sm mb-5 text-center text-gray-400">Contrary to popular belief, is not simply random text. It has roots in a
+      <p class="text-sm mb-5 text-center text-gray-400">Contrary to popular belief, is not simply random text. It has
+        roots in a
         piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
       <!-- section content -->
-      <div class=" grid gap-5 grid-cols-1 md:grid-cols-1 grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 justify-center items-center">
-  
-          <!-- first column -->
-          <div class="space-y-0 md:space-y-0 lg:space-y-16 order-2 md:order-2 lg:order-1">
-            <!-- first row -->
-            <div class="flex space-y-5 md:space-y-5 lg:space-y-0 flex-col md:flex-col lg:flex-row items-center text-center lg:text-left justify-center md:justify-center lg:items-center gap-3">
-              <div>
-                <img src="./images/group 1.png" alt="" srcset="">
-              </div>
-              <div>
-                <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Dedicated Team</h1>
-                <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-0"></div>
-                <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to pick the most amazing and
-                  fresh fruits.</p>
-              </div>
+      <div
+        class=" grid gap-5 grid-cols-1 md:grid-cols-1 grid-rows-3 lg:grid-rows-1 lg:grid-cols-3 justify-center items-center">
+
+        <!-- first column -->
+        <div class="space-y-0 md:space-y-0 lg:space-y-16 order-2 md:order-2 lg:order-1">
+          <!-- first row -->
+          <div
+            class="flex space-y-5 md:space-y-5 lg:space-y-0 flex-col md:flex-col lg:flex-row items-center text-center lg:text-left justify-center md:justify-center lg:items-center gap-3">
+            <div>
+              <img src="./images/group 1.png" alt="" srcset="">
             </div>
-            <!-- Second row -->
-            <div class="flex space-y-5 md:space-y-5 lg:space-y-0 flex-col md:flex-col lg:flex-row items-center  text-center lg:text-left   justify-center md:justify-center lg:items-center gap-3">
-              <div class="mt-10 md:mt-10 lg:mt-0">
-                <img src="./images/love elipse.png" alt="" srcset="">
-              </div>
-              <div>
-                <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Fresh is Best</h1>
-                <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-0"></div>
-                <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to pick the most amazing and
-                  fresh fruits.</p>
-              </div>
-            </div>
-            <!-- Third row -->
-            <div class="flex space-y-5 md:space-y-5 lg:space-y-0 flex-col md:flex-col lg:flex-row items-center  text-center lg:text-left   justify-center md:justify-center lg:items-center gap-3">
-              <div class="mt-10 md:mt-10 lg:mt-0">
-                <img src="./images/gift elipse.png" alt="" srcset="">
-              </div>
-              <div>
-                <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Gift Certificates</h1>
-                <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-0"></div>
-                <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to pick the most amazing and
-                  fresh fruits.</p>
-              </div>
+            <div>
+              <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Dedicated Team</h1>
+              <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-0"></div>
+              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to
+                pick the most amazing and
+                fresh fruits.</p>
             </div>
           </div>
-          <!-- Middle column -->
-          <div class=" order-1 md:order-1 lg:order-3 ">
-            <img class="h-full md:h-full lg:h-full w-full md:w-full lg:w-full " src="./images/whychoose1.png" alt="" srcset="">
+          <!-- Second row -->
+          <div
+            class="flex space-y-5 md:space-y-5 lg:space-y-0 flex-col md:flex-col lg:flex-row items-center  text-center lg:text-left   justify-center md:justify-center lg:items-center gap-3">
+            <div class="mt-10 md:mt-10 lg:mt-0">
+              <img src="./images/love elipse.png" alt="" srcset="">
+            </div>
+            <div>
+              <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Fresh is Best</h1>
+              <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-0"></div>
+              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to
+                pick the most amazing and
+                fresh fruits.</p>
+            </div>
           </div>
+          <!-- Third row -->
+          <div
+            class="flex space-y-5 md:space-y-5 lg:space-y-0 flex-col md:flex-col lg:flex-row items-center  text-center lg:text-left   justify-center md:justify-center lg:items-center gap-3">
+            <div class="mt-10 md:mt-10 lg:mt-0">
+              <img src="./images/gift elipse.png" alt="" srcset="">
+            </div>
+            <div>
+              <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Gift Certificates</h1>
+              <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-0"></div>
+              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to
+                pick the most amazing and
+                fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Middle column -->
+        <div class=" order-1 md:order-1 lg:order-3 ">
+          <img class="h-full md:h-full lg:h-full w-full md:w-full lg:w-full " src="./images/whychoose1.png" alt=""
+            srcset="">
+        </div>
         <!-- Last Column -->
         <div class="space-y-0 md:space-y-0 lg:space-y-16 text-center order-3 md:order-3 lg:order-3">
           <!-- first row -->
-          <div class="flex space-y-5 md:space-y-5 lg:space-y-0 gap-3 md:gap-3 lg:gap-0 flex-col items-center  md:flex-col lg:flex-row-reverse justify-center md:justify-center lg:items-center  ">
+          <div
+            class="flex space-y-5 md:space-y-5 lg:space-y-0 gap-3 md:gap-3 lg:gap-0 flex-col items-center  md:flex-col lg:flex-row-reverse justify-center md:justify-center lg:items-center  ">
             <div>
               <img src="./images/Fruit elipse.png" alt="" srcset="">
             </div>
             <div>
               <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Integrated Supplier</h1>
               <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-16"></div>
-              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to pick the most amazing and
+              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to
+                pick the most amazing and
                 fresh fruits.</p>
             </div>
           </div>
           <!-- Second row -->
-          <div class="flex space-y-5 md:space-y-5 lg:space-y-0 gap-4 md:gap-4 lg:gap-0 flex-col items-center  md:flex-col lg:flex-row-reverse justify-center md:justify-center lg:items-center">
+          <div
+            class="flex space-y-5 md:space-y-5 lg:space-y-0 gap-4 md:gap-4 lg:gap-0 flex-col items-center  md:flex-col lg:flex-row-reverse justify-center md:justify-center lg:items-center">
             <div class="mt-10 md:mt-10 lg:mt-0">
               <img src="./images/ice cream elipse.png" alt="" srcset="">
             </div>
             <div>
               <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold">Sustainable Practice</h1>
               <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-16"></div>
-              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br>to pick the most amazing and
+              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br>to
+                pick the most amazing and
                 fresh fruits.</p>
             </div>
           </div>
           <!-- Third row -->
-          <div class="flex space-y-5 md:space-y-5 lg:space-y-0 gap-3 md:gap-3 lg:gap-0 flex-col items-center md:flex-col lg:flex-row-reverse justify-center md:justify-center lg:items-center">
+          <div
+            class="flex space-y-5 md:space-y-5 lg:space-y-0 gap-3 md:gap-3 lg:gap-0 flex-col items-center md:flex-col lg:flex-row-reverse justify-center md:justify-center lg:items-center">
             <div class="mt-10 md:mt-10 lg:mt-0">
               <img class="" src="./images/thums up.png" alt="" srcset="">
             </div>
             <div class="">
               <h1 class="text-2xl md:text-4xl lg:text-2xl text-black font-bold ">The Benefits Only</h1>
               <div class="h-[1px] w-40 bg-slate-400 ml-10 md:ml-36 lg:ml-16"></div>
-              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to pick the most amazing and
+              <p class="text-sm md:text-2xl lg:text-sm text-gray-400"> Professional employees are there for you <br> to
+                pick the most amazing and
                 fresh fruits.</p>
             </div>
           </div>
@@ -632,23 +662,35 @@
       <h1 class="text-3xl md:text-4xl lg:text-4xl text-white font-bold">Fruit Burst</h1>
     </div>
     <div class="flex flex-wrap justify-center items-center">
-      <a class="ml-5">About us</a> 
-      <a class="ml-5">Contact</a> 
-      <a class="ml-5">Shop</a> 
+      <a class="ml-5">About us</a>
+      <a class="ml-5">Contact</a>
+      <a class="ml-5">Shop</a>
       <a class="ml-5">All Fruits</a>
       <a class="ml-5">Support</a>
       <a class="ml-5">My Account</a>
-    </div> 
+    </div>
     <div>
       <div class="grid grid-flow-col gap-4 items-center">
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a> 
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path></svg></a> 
-        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg></a>
+        <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+            <path
+              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+          </svg></a>
         <a href=""><i class="fa-brands fa-linkedin-in text-2xl" style="color: #ffffff;"></i></a>
         <a href=""><i class="fa-brands fa-instagram text-3xl" style="color: #ffffff;"></i></a>
         <a href=""><i class="fa-brands fa-apple text-3xl" style="color: #ffffff;"></i></a>
       </div>
-    </div> 
+    </div>
     <div>
       <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
     </div>
